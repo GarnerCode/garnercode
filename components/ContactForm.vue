@@ -58,6 +58,14 @@
                     border: 1px solid var(--color-primary) !important;
                 }
             }
+            .button {
+                margin: 0 auto;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .contact-form {
+            width: 40rem;
         }
     }
 </style>

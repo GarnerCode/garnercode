@@ -50,4 +50,30 @@
             }
         }
     }
+    @media screen and (min-width: 768px) {
+        #about {
+            flex-direction: row;
+            gap: 7rem;
+            .headshot {
+                width: 25rem;
+            }
+            .header-bar {
+                width: 23rem;
+            }
+        }
+    }
+    @media screen and (min-width: 1180px) {
+        #about {
+            .header-bar {
+                width: 20rem;
+            }
+        }
+    }
+    @media screen and (min-width: 1800px) {
+        #about {
+            .header-bar {
+                width: 30rem;
+            }
+        }
+    }
 </style>

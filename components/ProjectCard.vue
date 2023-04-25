@@ -71,6 +71,9 @@
                 color: var(--color-white);
                 font-size: 3rem;
             }
+            .project-description {
+                height: auto;
+            }
             .project-tech-list {
                 list-style: none;
                 padding: 0;
@@ -82,6 +85,39 @@
             .project-tech {
                 font-style: italic;
                 font-size: 12px;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .project-card {
+            flex-direction: row;
+            .thumbnail {
+                width: 30rem;
+            }
+            .card-text {
+                border-radius: 0;
+                border-top-right-radius: var(--border-radius);
+                border-bottom-right-radius: var(--border-radius);
+                left: 0;
+                top: 10px;
+                width: 100%;
+            }
+            .project-description {
+                height: 16rem;
+            }
+        }
+    }
+    @media screen and (min-width: 1180px) {
+        .project-card {
+            .project-description {
+                height: 17.7rem;
+            }
+        }
+    }
+    @media screen and (min-width: 1800px) {
+        .project-card {
+            .project-description {
+                height: 18.6rem;
             }
         }
     }

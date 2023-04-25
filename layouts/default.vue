@@ -50,6 +50,9 @@
         color: var(--color-black);
         border: none;
         font-size: 16px;
+        font-family: var(--font-family-secondary);
+        text-transform: uppercase;
+        letter-spacing: 2px;
         display: block;
         width: 100%;
         text-align: center;
@@ -82,6 +85,33 @@
         display: block;
         height: 1px;
         width: 28rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .px {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+    .button {
+        width: 30rem;
+    }
+  }
+  @media screen and (min-width: 1180px) {
+    .px {
+        padding-left: 25rem;
+        padding-right: 25rem;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .px {
+        padding-left: 35rem;
+        padding-right: 35rem;
+    }
+  }
+  @media screen and (min-width: 1800px) {
+    .px {
+        padding-left: 40rem;
+        padding-right: 40rem;
     }
   }
 </style>

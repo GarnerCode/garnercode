@@ -1,6 +1,6 @@
 <template>
     <header :class="{'scrolled': scrolled}">
-        <div class="logo-container">
+        <div @click="$router.push('/')" class="logo-container">
             <img src="@/static/assets/icons/logo.svg" alt="Logo">
             arner<span class="text-highlight">Code.io</span>
         </div>
@@ -9,12 +9,25 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-        <nav v-if="navToggled">
+        <nav class="mobile-nav" v-if="navToggled">
             <ul class="nav-list">
                 <li 
                     :class="{'active': $nuxt.$route.fullPath.includes(nav.label.toLocaleLowerCase()) || (nav.label === 'Home' && $nuxt.$route.fullPath === '/')}"
                     @click="navToggled = false" 
-                    class="nav-item" v-for="(nav, index) of navData" 
+                    class="nav-item" 
+                    v-for="(nav, index) of navData" 
+                    :key="index"
+                >
+                    <a class="nav-link" :href="nav.route">{{ nav.label }}</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="desktop-nav">
+            <ul class="nav-list">
+                <li
+                    :class="{'active': $nuxt.$route.fullPath.includes(nav.label.toLocaleLowerCase()) || (nav.label === 'Home' && $nuxt.$route.fullPath === '/')}"
+                    class="nav-item"
+                    v-for="(nav, index) of navData"
                     :key="index"
                 >
                     <a class="nav-link" :href="nav.route">{{ nav.label }}</a>
@@ -109,7 +122,7 @@
                     }
                 }
             }
-            nav {
+            .mobile-nav {
                 background-color: var(--color-black);
                 position: fixed;
                 top: 11rem;
@@ -146,6 +159,72 @@
                     font-size: 4.5rem;
                 }
             }
+            .desktop-nav {
+                display: none;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        header {
+            padding: 2rem 12rem;
+            width: calc(100vw - 24rem);
+            .mobile-nav {
+                padding: 2rem 12rem;
+                width: calc(100vw - 24rem);
+            }
+        }
+    }
+    @media screen and (min-width: 1180px) {
+        header {
+            padding: 2rem 25rem;
+            width: calc(100vw - 50rem);
+            height: 4rem;
+            .logo-container {
+                font-size: 3rem;
+                img {
+                    width: 3rem;
+                }
+            }
+            .mobile-nav-button {
+                display: none;
+            }
+            .desktop-nav {
+                display: block;
+                .nav-list {
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 3rem;
+                }
+                .nav-item {
+                    .nav-link {
+                        text-decoration: none;
+                        color: var(--color-white);
+                        font-size: 2rem;
+                    }
+                    &.active {
+                        border-bottom: 1px solid var(--color-primary);
+                        a {
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        header {
+            padding: 2rem 35rem;
+            width: calc(100vw - 70rem);
+            height: 3rem;
+        }
+    }
+    @media screen and (min-width: 1800px) {
+        header {
+            padding: 2rem 40rem;
+            width: calc(100vw - 80rem);
         }
     }
 </style>

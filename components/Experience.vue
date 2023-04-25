@@ -30,26 +30,49 @@
 </script>
 
 <style lang="scss">
-    #experience {
-        background-color: var(--color-white);
-        .experience-list {
-            list-style-type: square;
-            margin-top: 5rem;
+    @media screen and (min-width: 0px) {
+        #experience {
+            background-color: var(--color-white);
+            .experience-list {
+                list-style-type: square;
+                margin-top: 5rem;
+            }
+            .experience-item {
+                padding-left: 2rem;
+                h3 {
+                    font-size: 3rem;
+                    color: var(--color-black);
+                }
+                &::marker {
+                    color: var(--color-primary);
+                    font-size: 3rem;
+                    content: "▶";
+                }
+                .fine {
+                    font-size: 12px;
+                    font-style: italic;
+                }
+            }
         }
-        .experience-item {
-            padding-left: 2rem;
-            h3 {
-                font-size: 3rem;
-                color: var(--color-black);
+    }
+    @media screen and (min-width: 768px) {
+        #experience {
+            .header-bar {
+                width: 56rem;
             }
-            &::marker {
-                color: var(--color-primary);
-                font-size: 3rem;
-                content: "▶";
+        }
+    }
+    @media screen and (min-width: 1180px) {
+        #experience {
+            .header-bar {
+                width: 53rem;
             }
-            .fine {
-                font-size: 12px;
-                font-style: italic;
+        }
+    }
+    @media screen and (min-width: 1800px) {
+        #experience {
+            .header-bar {
+                width: 63rem;
             }
         }
     }

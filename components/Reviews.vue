@@ -56,7 +56,7 @@
                 gap: 2rem;
             }
             .review-image {
-                border-radius: 100%;
+                border-radius: var(--border-radius);
                 width: 10rem;
             }
             .credit-position {

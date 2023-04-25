@@ -42,4 +42,25 @@
             }
         }
     }
+    @media screen and (min-width: 768px) {
+        #portfolio {
+            .header-bar {
+                width: 56rem;
+            }
+        }
+    }
+    @media screen and (min-width: 1180px) {
+        #portfolio {
+            .header-bar {
+                width: 53rem;
+            }
+        }
+    }
+    @media screen and (min-width: 1800px) {
+        #portfolio {
+            .header-bar {
+                width: 63rem;
+            }
+        }
+    }
 </style>

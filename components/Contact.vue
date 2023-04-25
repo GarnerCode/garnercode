@@ -23,4 +23,11 @@
             }
         }
     }
+    @media screen and (min-width: 768px) {
+        #contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 </style>

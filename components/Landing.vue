@@ -28,4 +28,11 @@
             justify-content: center;
         }
     }
+    @media screen and (min-width: 768px) {
+        #landing {
+            p {
+                width: 35rem;
+            }
+        }
+    }
 </style>
