@@ -3,7 +3,7 @@
         <h2 class="text-highlight">Technologies</h2>
         <ul class="tech-list">
             <li class="tech-item" v-for="(tech, index) of aboutData.tech" :key="index">
-                <img class="tech-img" :src="tech.imageUrl">
+                <img class="tech-img" :src="tech.imageUrl" :alt="tech.label + ' logo'">
                 <div class="tech-label">
                     {{ tech.label }}
                 </div>

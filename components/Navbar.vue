@@ -1,7 +1,7 @@
 <template>
     <header :class="{'scrolled': scrolled}">
         <div class="logo-container">
-            <img src="@/static/assets/icons/logo.svg">
+            <img src="@/static/assets/icons/logo.svg" alt="Logo">
             arner<span class="text-highlight">Code.io</span>
         </div>
         <div @click="navToggled = !navToggled" :class="{'toggled': navToggled}" class="mobile-nav-button">
@@ -11,7 +11,12 @@
         </div>
         <nav v-if="navToggled">
             <ul class="nav-list">
-                <li @click="navToggled = false" class="nav-item" v-for="(nav, index) of navData" :key="index">
+                <li 
+                    :class="{'active': $nuxt.$route.fullPath.includes(nav.label.toLocaleLowerCase()) || (nav.label === 'Home' && $nuxt.$route.fullPath === '/')}"
+                    @click="navToggled = false" 
+                    class="nav-item" v-for="(nav, index) of navData" 
+                    :key="index"
+                >
                     <a class="nav-link" :href="nav.route">{{ nav.label }}</a>
                 </li>
             </ul>
@@ -42,7 +47,7 @@
                 } else {
                     this.scrolled = false;
                 }
-            }
+            },
         },
     })
 </script>
@@ -57,12 +62,13 @@
             padding: 2rem 4rem;
             position: fixed;
             top: 0;
+            z-index: 100;
             width: calc(100vw - 8rem);
             background-color: var(--color-black);
             transition: box-shadow 0.3s ease;
-            height: 6rem;
+            height: 7rem;
             &.scrolled {
-                box-shadow: 0px 5px 15px rgba(34, 39, 46, 0.5);
+                box-shadow: 0px 5px 15px -5px rgba(34, 39, 46, 0.5);
             }
             .logo-container {
                 font-size: 4.5rem;
@@ -106,11 +112,12 @@
             nav {
                 background-color: var(--color-black);
                 position: fixed;
-                top: 8rem;
+                top: 11rem;
                 left: 0;
                 padding: 2rem 4rem;
+                padding-top: 0;
                 width: calc(100vw - 4rem);
-                box-shadow: 0px 5px 15px rgba(34, 39, 46, 0.5);
+                box-shadow: 0px 5px 15px -5px rgba(34, 39, 46, 0.5);
                 .nav-list {
                     padding: 0;
                     list-style: none;
@@ -118,6 +125,19 @@
                     flex-direction: column;
                     justify-content: space-between;
                     gap: 5rem;
+                }
+                .nav-item {
+                    &.active {
+                        a {
+                            color: var(--color-primary);
+                        }
+                        &::before {
+                            color: var(--color-primary);
+                            font-size: 3rem;
+                            content: "▶";
+                            margin-right: 1rem;
+                        }
+                    }
                 }
                 .nav-link {
                     text-decoration: none;

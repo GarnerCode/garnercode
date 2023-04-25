@@ -20,6 +20,8 @@
     --font-family-primary: 'Roboto', sans-serif;
     --font-family-secondary: 'Roboto Condensed', sans-serif;
 
+    --image-box-shadow: -10px -10px 0px var(--color-primary), 10px 10px 0px var(--color-black);
+
     --border-radius: 8px;
   }
   @media screen and (min-width: 0px) {
@@ -35,6 +37,9 @@
     }
     h2 {
         font-size: 6rem;
+    }
+    h3 {
+        font-size: 3rem;
     }
     p {
         font-size: 16px;

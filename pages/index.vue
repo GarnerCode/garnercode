@@ -4,6 +4,8 @@
     <About></About>
     <Tech></Tech>
     <Experience></Experience>
+    <Reviews></Reviews>
+    <Portfolio></Portfolio>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
     <section id="about" class="px py">
         <div class="column">
-            <img class="headshot" :src="aboutData.headshotUrl" alt="Headshot Image">
+            <img class="headshot" :src="aboutData.headshotUrl" alt="Headshot image">
         </div>
         <div class="column about-text">
             <div class="section-header-top">
@@ -38,7 +38,7 @@
             .headshot {
                 display: block;
                 width: 100%;
-                box-shadow: -10px -10px 0px var(--color-primary), 10px 10px 0px var(--color-black);
+                box-shadow: var(--image-box-shadow);
                 border-radius: var(--border-radius);
             }
             h2 {

@@ -5,19 +5,52 @@
             <div class="header-bar"></div>
         </div>
         <h2 class="text-highlight">Experience</h2>
+        <ul class="experience-list">
+            <li class="experience-item" v-for="(job, index) of experienceData" :key="index">
+                <h3>{{ job.company }}</h3>
+                <h3>{{ job.position }}</h3>
+                <div class="fine">{{ job.dates }}</div>
+            </li>
+        </ul>
     </section>
 </template>
 
 <script lang="ts">
     import { defineComponent } from 'vue';
+    import { experienceData } from '@/constants/experience';
 
     export default defineComponent({
-        name: 'Experience'
+        name: 'Experience',
+        data() {
+            return {
+                experienceData,
+            }
+        }
     })
 </script>
 
 <style lang="scss">
     #experience {
         background-color: var(--color-white);
+        .experience-list {
+            list-style-type: square;
+            margin-top: 5rem;
+        }
+        .experience-item {
+            padding-left: 2rem;
+            h3 {
+                font-size: 3rem;
+                color: var(--color-black);
+            }
+            &::marker {
+                color: var(--color-primary);
+                font-size: 3rem;
+                content: "▶";
+            }
+            .fine {
+                font-size: 12px;
+                font-style: italic;
+            }
+        }
     }
 </style>
