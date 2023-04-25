@@ -46,9 +46,9 @@
     }
     .button {
         text-decoration: none;
-        background: none;
-        color: var(--color-primary);
-        border: 1px solid var(--color-primary);
+        background-color: var(--color-primary);
+        color: var(--color-black);
+        border: none;
         font-size: 16px;
         display: block;
         width: 100%;
@@ -57,7 +57,6 @@
         border-radius: var(--border-radius);
         transition: all 0.1s ease;
         &:hover {
-            background-color: var(--color-primary);
             color: var(--color-white);
         }
     }

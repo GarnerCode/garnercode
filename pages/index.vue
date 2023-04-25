@@ -6,6 +6,7 @@
     <Experience></Experience>
     <Reviews></Reviews>
     <Portfolio></Portfolio>
+    <Contact></Contact>
   </div>
 </template>
 

@@ -46,6 +46,8 @@
             }
             .review-quote {
                 font-style: italic;
+                text-align: justify;
+                margin-top: 5rem;
             }
             .credit-container {
                 display: flex;
