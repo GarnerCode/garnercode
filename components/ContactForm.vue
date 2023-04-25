@@ -1,15 +1,18 @@
 <template>
-    <form class="contact-form">
-        <div class="field">
-            <input placeholder="Name" class="form-input" type="text" name="name">
+    <form @submit="(e) => handleSubmit(e)" action="https://getform.io/f/607da9e8-ff5a-4f71-9905-0979b0840530" method="POST" class="contact-form">
+        <div class="field name-field">
+            <input v-model="name" placeholder="Name" class="form-input" type="text" name="name">
         </div>
-        <div class="field">
-            <input placeholder="Email" class="form-input" type="email" name="email">
+        <div class="field email-field">
+            <input v-model="email" placeholder="Email" class="form-input" type="email" name="email">
         </div>
-        <div class="field">
-            <textarea placeholder="Message" class="form-input" name="message" cols="30" rows="10"></textarea>
+        <div class="field phone-field">
+            <input v-model="phone" placeholder="Phone" class="form-input" type="tel" name="phone">
         </div>
-        <input class="button" type="submit" value="Submit">
+        <div class="field message-field">
+            <textarea v-model="message" placeholder="Message" class="form-input" name="message" cols="30" rows="10"></textarea>
+        </div>
+        <input :class="{'disabled': !isFormComplete()}" class="button" type="submit" value="Submit">
     </form>
 </template>
 
@@ -20,8 +23,29 @@
         name: 'ContactForm',
         data() {
             return {
-
+                name: '',
+                email: '',
+                phone: '',
+                message: '',
             }
+        },
+        methods: {
+            isFormComplete(): boolean {
+                if (
+                    this.name === '' ||
+                    this.email === '' ||
+                    this.message === '' ||
+                    this.phone !== ''
+                ) {
+                    return false;
+                }
+                return true;
+            },
+            handleSubmit(e: Event): void {
+                if (!this.isFormComplete()) {
+                    e.preventDefault();
+                }
+            },
         }
     })
 </script>
@@ -35,6 +59,9 @@
             label {
                 display: block;
 
+            }
+            .phone-field {
+                display: none;
             }
             .form-input {
                 display: block;
@@ -61,6 +88,13 @@
             .button {
                 margin: 0 auto;
                 cursor: pointer;
+                border: 1px solid var(--color-black);
+                &.disabled {
+                    cursor: not-allowed;
+                    background: none;
+                    color: var(--color-primary);
+                    border: 1px solid var(--color-primary);
+                }
             }
         }
     }

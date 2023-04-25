@@ -1,7 +1,7 @@
 <template>
     <section id="portfolio" class="px py">
         <div class="section-header-top">
-            <h2>Past</h2>
+            <h2>Featured</h2>
             <div class="header-bar"></div>
         </div>
         <h2 class="text-highlight">Projects</h2>
@@ -40,26 +40,29 @@
                 gap: 10rem;
                 margin-top: 5rem;
             }
+            .header-bar {
+                width: 20rem;
+            }
         }
     }
     @media screen and (min-width: 768px) {
         #portfolio {
             .header-bar {
-                width: 56rem;
+                width: 47rem;
             }
         }
     }
     @media screen and (min-width: 1180px) {
         #portfolio {
             .header-bar {
-                width: 53rem;
+                width: 44rem;
             }
         }
     }
     @media screen and (min-width: 1800px) {
         #portfolio {
             .header-bar {
-                width: 63rem;
+                width: 54rem;
             }
         }
     }

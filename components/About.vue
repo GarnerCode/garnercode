@@ -10,6 +10,7 @@
             </div>
             <h2 class="text-highlight">Tyler Garner</h2>
             <p v-for="(paragraph, index) of aboutData.summaryParagraphs" :key="index">{{ paragraph }}</p>
+            <nuxt-link class="button" to="/about">Learn More</nuxt-link>
         </div>
     </section>
 </template>
@@ -35,6 +36,9 @@
             display: flex;
             flex-direction: column;
             gap: 5rem;
+            .header-bar {
+                width: 26rem;
+            }
             .headshot {
                 display: block;
                 width: 100%;
@@ -58,21 +62,21 @@
                 width: 25rem;
             }
             .header-bar {
-                width: 23rem;
+                width: 22rem;
             }
         }
     }
     @media screen and (min-width: 1180px) {
         #about {
             .header-bar {
-                width: 20rem;
+                width: 18rem;
             }
         }
     }
     @media screen and (min-width: 1800px) {
         #about {
             .header-bar {
-                width: 30rem;
+                width: 29rem;
             }
         }
     }

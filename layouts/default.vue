@@ -84,7 +84,6 @@
         background-color: var(--color-primary);
         display: block;
         height: 1px;
-        width: 28rem;
     }
   }
   @media screen and (min-width: 768px) {

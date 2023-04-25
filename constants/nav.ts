@@ -5,11 +5,11 @@ export const navData = [
     },
     {
         label: 'About',
-        route: '#about'
+        route: '/about'
     },
     {
         label: 'Portfolio',
-        route: '#portfolio'
+        route: '/portfolio'
     },
     {
         label: 'Contact',

@@ -33,6 +33,9 @@
     @media screen and (min-width: 0px) {
         #experience {
             background-color: var(--color-white);
+            .header-bar {
+                width: 28rem;
+            }
             .experience-list {
                 list-style-type: square;
                 margin-top: 5rem;
@@ -66,7 +69,7 @@
     @media screen and (min-width: 1180px) {
         #experience {
             .header-bar {
-                width: 53rem;
+                width: 52rem;
             }
         }
     }

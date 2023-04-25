@@ -18,7 +18,7 @@
                     v-for="(nav, index) of navData" 
                     :key="index"
                 >
-                    <a class="nav-link" :href="nav.route">{{ nav.label }}</a>
+                    <nuxt-link class="nav-link" :to="nav.route">{{ nav.label }}</nuxt-link>
                 </li>
             </ul>
         </nav>
@@ -30,7 +30,7 @@
                     v-for="(nav, index) of navData"
                     :key="index"
                 >
-                    <a class="nav-link" :href="nav.route">{{ nav.label }}</a>
+                    <nuxt-link class="nav-link" :to="nav.route">{{ nav.label }}</nuxt-link>
                 </li>
             </ul>
         </nav>

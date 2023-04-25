@@ -1,32 +1,40 @@
 <template>
-    <div id="contact-page" class="px py">
+    <div id="portfolio-page" class="px py">
         <div class="page-header">
             <div class="header-top">
-                <h2>Let's</h2>
+                <h2>All</h2>
                 <div class="header-bar"></div>
             </div>
-            <h2 class="text-highlight">Build Something</h2>
+            <h2 class="text-highlight">Projects</h2>
         </div>
         <div class="page-content">
-            <p>If you have any questions, or are interested in working with me, contact me today!</p>
-            <div class="form-container">
-                <ContactForm></ContactForm>
-            </div>
+            <ProjectCard 
+                v-for="(project, index) of projects" 
+                :key="index" 
+                :project="project">
+            </ProjectCard>
         </div>
     </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import { projectsData } from '~/constants/projects';
+import { Project } from '@/interfaces/Project';
 
 export default Vue.extend({
-    name: 'ContactPage'
+    name: 'PortfolioPage',
+    data() {
+        return {
+            projects: projectsData as Project[]
+        }
+    }
 })
 </script>
 
 <style lang="scss">
     @media screen and (min-width: 0px) {
-        #contact-page {
+        #portfolio-page {
             background-color: var(--color-white);
             color: var(--color-black);
             padding-top: 15rem;
@@ -37,38 +45,41 @@ export default Vue.extend({
                 align-items: center;
             }
             .header-bar {
-                width: 29rem;
+                width: 34rem;
             }
             .page-content {
+                margin-top: 5rem;
                 display: flex;
                 flex-direction: column;
-                gap: 5rem;
-                margin-top: 5rem;
-                p {
-                    margin: 0;
-                }
-            }
-            .form-container {
-                background-color: var(--color-black);
-                border-radius: var(--border-radius);
-                padding: 2rem;
-                box-shadow: -10px -10px 0px var(--color-primary);
-                width: fit-content;
-                margin: 0 auto;
+                gap: 10rem;
             }
         }
     }
     @media screen and (min-width: 768px) {
-        #contact-page {
+        #portfolio-page {
             .header-bar {
-                width: 57rem;
+                width: 62rem;
+            }
+        }
+    }
+    @media screen and (min-width: 820px) {
+        #portfolio-page {
+            .header-bar {
+                width: 68rem;
             }
         }
     }
     @media screen and (min-width: 1024px) {
-        #contact-page {
+        #portfolio-page {
             .header-bar {
-                width: 63rem;
+                width: 68rem;
+            }
+        }
+    }
+    @media screen and (min-width: 1180px) {
+        #portfolio-page {
+            .header-bar {
+                width: 58rem;
             }
         }
     }
