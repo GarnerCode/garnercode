@@ -70,6 +70,10 @@
                 a {
                     color: var(--color-white);
                     font-size: 3rem;
+                    transition: color 0.1s ease;
+                    &:hover {
+                        color: var(--color-primary);
+                    }
                 }
             }
             .fine {

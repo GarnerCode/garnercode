@@ -36,6 +36,7 @@
             .experience-list {
                 list-style-type: square;
                 margin-top: 5rem;
+                padding-left: 2.5rem;
             }
             .experience-item {
                 padding-left: 2rem;

@@ -70,6 +70,10 @@
             .project-link {
                 color: var(--color-white);
                 font-size: 3rem;
+                transition: color 0.1s ease;
+                &:hover {
+                    color: var(--color-primary);
+                }
             }
             .project-description {
                 height: auto;
