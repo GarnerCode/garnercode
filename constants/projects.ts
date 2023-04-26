@@ -2,7 +2,7 @@ export const projectsData = [
     {
         title: 'Fusion',
         description: 'Sample e-commerce website offering a variety of paintball gear.',
-        imageUrl: '/assets/images/fusion.webp',
+        imageUrl: 'assets/images/fusion.webp',
         liveUrl: 'https://reliable-pithivier-dd3e26.netlify.app/',
         gitUrl: 'https://github.com/GarnerCode/fusion-paintball',
         tech: [
@@ -12,7 +12,7 @@ export const projectsData = [
     {
         title: 'PokeVue',
         description: 'Index providing information on Generation 1 Pokemon',
-        imageUrl: '/assets/images/pokevue.webp',
+        imageUrl: 'assets/images/pokevue.webp',
         liveUrl: 'https://chic-paletas-8ebf90.netlify.app/',
         gitUrl: 'https://github.com/GarnerCode/pokevue',
         tech: [

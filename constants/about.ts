@@ -1,5 +1,5 @@
 export const aboutData = {
-    headshotUrl: 'https://i.imgur.com/HL6Qo7u.jpeg',
+    headshotUrl: 'assets/images/headshot.webp',
     summaryParagraphs: [
         "I am a front-end web developer experienced in creating user-friendly and visually appealing websites. With a strong eye for design and a dedication to writing clean, efficient code, I bring ideas to life on the web.",
         "When I'm not coding, you can find me staying active with paintball, or writing campaigns for Dungeons & Dragons!",

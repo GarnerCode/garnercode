@@ -15,7 +15,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: 'https://i.imgur.com/RO5ZnpK.png' },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap",
+      },
     ]
   },
 

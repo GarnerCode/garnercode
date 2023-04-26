@@ -9,8 +9,8 @@
 </template>
 
 <style lang="scss">
-  @import '@/static/assets/styles.scss';
   @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+
   :root {
     --color-black: #2D333C;
     --color-white: #fff;
@@ -27,6 +27,29 @@
   @media screen and (min-width: 0px) {
     * {
       font-family: var(--font-family-primary);
+    }
+    html {
+        overflow-x: hidden;
+        font-size: 62.5%;
+        @media screen and (min-width: 112.5em) {
+            font-size: 75%;
+        }
+        
+        @media screen and (min-width: 85.375em) and (max-width: 75em) {
+            font-size: 56.25%;
+        }
+        
+        @media screen and (max-width: 56.25em) {
+            font-size: 50%;
+        }
+        
+        @media screen and (max-width: 28.125em) {
+            font-size: 45%;
+        }
+    }
+    body {
+        margin: 0;
+        background-color: #2D333C;
     }
     h1, h2, h3 {
         margin: 0;
