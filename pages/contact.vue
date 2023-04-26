@@ -53,7 +53,7 @@ export default Vue.extend({
                 border-radius: var(--border-radius);
                 padding: 2rem;
                 box-shadow: -10px -10px 0px var(--color-primary);
-                width: fit-content;
+                width: calc(100% - 8rem);
                 margin: 0 auto;
             }
         }
@@ -62,6 +62,9 @@ export default Vue.extend({
         #contact-page {
             .header-bar {
                 width: 57rem;
+            }
+            .form-container {
+                width: fit-content;
             }
         }
     }

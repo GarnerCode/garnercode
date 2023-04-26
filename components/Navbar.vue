@@ -203,9 +203,10 @@
                         text-decoration: none;
                         color: var(--color-white);
                         font-size: 2rem;
+                        font-family: var(--font-family-secondary);
                     }
                     &.active {
-                        border-bottom: 1px solid var(--color-primary);
+                        border-bottom: 3px solid var(--color-primary);
                         a {
                             color: var(--color-primary);
                         }
