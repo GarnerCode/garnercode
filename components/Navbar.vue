@@ -9,19 +9,21 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-        <nav class="mobile-nav" v-if="navToggled">
-            <ul class="nav-list">
-                <li 
-                    :class="{'active': $nuxt.$route.fullPath.includes(nav.label.toLocaleLowerCase()) || (nav.label === 'Home' && $nuxt.$route.fullPath === '/')}"
-                    @click="navToggled = false" 
-                    class="nav-item" 
-                    v-for="(nav, index) of navData" 
-                    :key="index"
-                >
-                    <nuxt-link class="nav-link" :to="nav.route">{{ nav.label }}</nuxt-link>
-                </li>
-            </ul>
-        </nav>
+        <Transition name="slide" mode="out-in">
+            <nav class="mobile-nav" v-if="navToggled">
+                <ul class="nav-list">
+                    <li 
+                        :class="{'active': $nuxt.$route.fullPath.includes(nav.label.toLocaleLowerCase()) || (nav.label === 'Home' && $nuxt.$route.fullPath === '/')}"
+                        @click="navToggled = false" 
+                        class="nav-item" 
+                        v-for="(nav, index) of navData" 
+                        :key="index"
+                    >
+                        <nuxt-link class="nav-link" :to="nav.route">{{ nav.label }}</nuxt-link>
+                    </li>
+                </ul>
+            </nav>
+        </Transition>
         <nav class="desktop-nav">
             <ul class="nav-list">
                 <li
@@ -143,12 +145,7 @@
                     &.active {
                         a {
                             color: var(--color-primary);
-                        }
-                        &::before {
-                            color: var(--color-primary);
-                            font-size: 3rem;
-                            content: "▶";
-                            margin-right: 1rem;
+                            border-bottom: 3px solid var(--color-primary);
                         }
                     }
                 }
@@ -162,6 +159,13 @@
             .desktop-nav {
                 display: none;
             }
+        }
+        .slide-enter, .slide-leave-to {
+            opacity: 0;
+            transform: translateY(-2rem);
+        }
+        .slide-enter-active, .slide-leave-active {
+            transition: all 0.3s ease;
         }
     }
     @media screen and (min-width: 768px) {

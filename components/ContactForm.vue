@@ -73,6 +73,7 @@
                 color: var(--color-white);
                 border: none;
                 border-bottom: 1px solid var(--color-white);
+                border-radius: 0;
                 &:focus {
                     outline: none;
                     border-bottom: 1px solid var(--color-primary);

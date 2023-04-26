@@ -50,7 +50,6 @@
                 &::marker {
                     color: var(--color-primary);
                     font-size: 3rem;
-                    content: "▶";
                 }
                 .fine {
                     font-size: 12px;
