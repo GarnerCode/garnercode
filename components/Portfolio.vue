@@ -24,7 +24,7 @@
             return {
                 projects: projectsData as Project[],
             }
-        }
+        },
     })
 </script>
 

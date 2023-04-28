@@ -19,15 +19,15 @@ export const projectsData = [
             'Vue',
         ],
     },
-    // {
-    //     title: 'DungeoNex',
-    //     description: 'Dungeons & Dragons campaign management tool.',
-    //     imageUrl: '/assets/images/placeholder.webp',
-    //     liveUrl: 'https://heroic-sfogliatella-f7ca2e.netlify.app/',
-    //     gitUrl: 'https://github.com/GarnerCode/dungeonex',
-    //     tech: [
-    //         'Vue',
-    //         'Firebase',
-    //     ],
-    // },
+    {
+        title: 'DungeoNex (Under Development)',
+        description: 'Dungeons & Dragons campaign management tool allowing users to create and manage campaigns, characters, and encounters.',
+        imageUrl: 'assets/images/dungeonex.webp',
+        liveUrl: 'https://dungeonex.vercel.app/',
+        gitUrl: 'https://github.com/GarnerCode/dungeonex',
+        tech: [
+            'Vue',
+            'Supabase',
+        ],
+    },
 ]

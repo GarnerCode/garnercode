@@ -77,6 +77,7 @@
             }
             .project-description {
                 height: auto;
+                text-align: justify;
             }
             .project-tech-list {
                 list-style: none;

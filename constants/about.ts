@@ -7,8 +7,8 @@ export const aboutData = {
     detailsParagraphs: [
         "I am a front-end web developer experienced in creating user-friendly and visually appealing websites. With a strong eye for design and a dedication to writing clean, efficient code, I bring ideas to life on the web.",
         "Beginning in 2018, one year after I graduated high school, I started my journey to becoming a professional web developer by teaching myself HTML, CSS, and JavaScript. I then furthered my skillset by attending Glendale Community College and earning a Certificate in Web Development in 2020.",
-        "I then progressed my web development skills by learning React, but was granted the opportunity to quickly adapt to Vue and Angular in a professional environment, and as such, my skills in the latter two frameworks increased exponentially.",
-        "Currently, my focus is in Vue and Nuxt to build complex web applications and generate high-speed static websites. As I am front-end focused, I utilize Firebase when backend structure is necessary in order to build secure full-stack websites and applications.",
+        "I progressed my web development skills by learning React, but was granted the opportunity to quickly adapt to Vue and Angular in a professional environment, and as such, my skills in the latter two frameworks increased exponentially.",
+        "Currently, my focus is in Vue and Nuxt to build complex web applications and generate high-speed static websites. As I am front-end focused, I utilize Supabase when backend structure is necessary in order to build secure full-stack websites and applications.",
         "When I'm not coding, you can find me staying active with paintball, or writing campaigns for Dungeons & Dragons!",
         "If you have any questions, or are interested in working with me, contact me today!"
     ],
@@ -34,8 +34,8 @@ export const aboutData = {
             label: 'Sass',
         },
         {
-            imageUrl: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg',
-            label: 'Firebase',
+            imageUrl: 'assets/icons/supabase.svg',
+            label: 'Supabase',
         },
     ]
 }
