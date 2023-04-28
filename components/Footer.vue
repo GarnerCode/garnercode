@@ -1,8 +1,7 @@
 <template>
     <footer class="px">
         <div class="logo-container">
-            <img src="@/static/assets/icons/logo.svg" alt="Logo">
-            arner<span class="text-highlight">Code.io</span>
+            <img src="@/static/assets/images/garnercode-logo-full.svg" alt="Logo">
         </div>
         <ul class="links-list">
             <li>
@@ -55,7 +54,7 @@
                 align-items: flex-start;
                 cursor: pointer;
                 img {
-                    width: 2rem;
+                    width: 10rem;
                 }
                 span {
                     font-family: var(--font-family-secondary);

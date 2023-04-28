@@ -1,8 +1,7 @@
 <template>
     <header :class="{'scrolled': scrolled}">
         <div @click="$router.push('/')" class="logo-container">
-            <img src="@/static/assets/icons/logo.svg" alt="Logo">
-            arner<span class="text-highlight">Code.io</span>
+            <img src="@/static/assets/images/garnercode-logo-full.svg" alt="Logo">
         </div>
         <div @click="navToggled = !navToggled" :class="{'toggled': navToggled}" class="mobile-nav-button">
             <div class="line1"></div>
@@ -96,7 +95,7 @@
                 align-items: flex-start;
                 cursor: pointer;
                 img {
-                    width: 4rem;
+                    width: 25rem;
                 }
                 span {
                     font-family: var(--font-family-secondary);
@@ -188,7 +187,7 @@
             .logo-container {
                 font-size: 3rem;
                 img {
-                    width: 3rem;
+                    width: 20rem;
                 }
             }
             .mobile-nav-button {
