@@ -15,4 +15,8 @@ export const navData = [
         label: 'Contact',
         route: '/contact'
     },
+    {
+        label: 'Resume',
+        route: '/'
+    },
 ]

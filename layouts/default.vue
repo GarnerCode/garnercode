@@ -22,7 +22,7 @@
 
     --image-box-shadow: -10px -10px 0px var(--color-primary), 10px 10px 0px var(--color-black);
 
-    --border-radius: 8px;
+    --border-radius: 1px;
   }
   @media screen and (min-width: 0px) {
     * {
@@ -82,6 +82,7 @@
         padding: 1.6rem 0;
         border-radius: var(--border-radius);
         transition: all 0.1s ease;
+        cursor: pointer;
         &:hover {
             color: var(--color-white);
         }

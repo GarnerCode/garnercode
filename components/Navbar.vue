@@ -19,7 +19,8 @@
                         v-for="(nav, index) of navData" 
                         :key="index"
                     >
-                        <nuxt-link class="nav-link" :to="nav.route">{{ nav.label }}</nuxt-link>
+                        <nuxt-link v-if="nav.label !== 'Resume'" class="nav-link" :to="nav.route">{{ nav.label }}</nuxt-link>
+                        <a v-if="nav.label === 'Resume'" class="nav-link" href="https://drive.google.com/file/d/1qYOm6YzFNQimXF87O818Nmb5PVQXub_m/view" target="_blank">Resume</a>
                     </li>
                 </ul>
             </nav>
@@ -32,7 +33,8 @@
                     v-for="(nav, index) of navData"
                     :key="index"
                 >
-                    <nuxt-link class="nav-link" :to="nav.route">{{ nav.label }}</nuxt-link>
+                    <nuxt-link v-if="nav.label !== 'Resume'" class="nav-link" :to="nav.route">{{ nav.label }}</nuxt-link>
+                    <a v-if="nav.label === 'Resume'" class="nav-link" href="https://drive.google.com/file/d/1qYOm6YzFNQimXF87O818Nmb5PVQXub_m/view" target="_blank">Resume</a>
                 </li>
             </ul>
         </nav>

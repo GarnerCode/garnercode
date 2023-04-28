@@ -17,6 +17,7 @@
     @media screen and (min-width: 0px) {
         #contact {
             background-color: var(--color-black);
+            min-height: 100vh;
             h2 {
                 text-align: center;
                 margin-bottom: 5rem;

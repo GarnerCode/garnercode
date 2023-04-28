@@ -8,7 +8,6 @@
             <h2 class="text-highlight">Build Something</h2>
         </div>
         <div class="page-content">
-            <p>If you have any questions, or are interested in working with me, contact me today!</p>
             <div class="form-container">
                 <ContactForm></ContactForm>
             </div>
