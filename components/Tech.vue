@@ -1,7 +1,7 @@
 <template>
     <section id="tech" class="px py">
-        <h2 class="text-highlight">Technologies</h2>
-        <ul class="tech-list">
+        <h2 class="text-highlight" data-aos="fade-up">Technologies</h2>
+        <ul class="tech-list" data-aos="fade-up">
             <li class="tech-item" v-for="(tech, index) of aboutData.tech" :key="index">
                 <img class="tech-img" :src="tech.imageUrl" :alt="tech.label + ' logo'">
                 <div class="tech-label">

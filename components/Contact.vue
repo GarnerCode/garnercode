@@ -1,7 +1,7 @@
 <template>
     <section id="contact" class="px py">
-        <h2 class="text-highlight">Contact</h2>
-        <ContactForm></ContactForm>
+        <h2 class="text-highlight" data-aos="fade-up">Contact</h2>
+        <ContactForm data-aos="fade-up"></ContactForm>
     </section>
 </template>
 

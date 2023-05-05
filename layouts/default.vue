@@ -24,6 +24,22 @@
 
     --border-radius: 3px;
   }
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100rem);
+    }
+    to {
+        transform: translateX(0rem);
+    }
+}
   @media screen and (min-width: 0px) {
     * {
       font-family: var(--font-family-primary);

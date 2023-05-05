@@ -26,6 +26,14 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            .landing-content {
+                transform: translateX(-100rem);
+                animation: slideInFromLeft 0.5s 0.5s ease forwards;
+                a {
+                    opacity: 0;
+                    animation: fadeIn 0.5s 1.25s ease forwards;
+                }
+            }
         }
     }
     @media screen and (min-width: 768px) {

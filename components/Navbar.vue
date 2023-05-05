@@ -94,6 +94,8 @@
             background-color: var(--color-black);
             transition: all 0.3s ease;
             height: 7rem;
+            opacity: 0;
+            animation: fadeIn 0.3s 0.25s ease forwards;
             &.scrolled {
                 box-shadow: 0px 5px 15px -5px rgba(34, 39, 46, 0.5);
             }

@@ -1,9 +1,9 @@
 <template>
     <section id="about" class="px py">
-        <div class="column">
+        <div class="column" data-aos="fade-up">
             <img class="headshot" :src="aboutData.headshotUrl" alt="Headshot image">
         </div>
-        <div class="column about-text">
+        <div class="column about-text" data-aos="fade-up">
             <div class="section-header-top">
                 <h2>About</h2>
                 <div class="header-bar"></div>

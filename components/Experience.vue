@@ -1,11 +1,11 @@
 <template>
     <section id="experience" class="px py">
-        <div class="section-header-top">
+        <div class="section-header-top" data-aos="fade-up">
             <h2>Work</h2>
             <div class="header-bar"></div>
         </div>
-        <h2 class="text-highlight">Experience</h2>
-        <ul class="experience-list">
+        <h2 class="text-highlight" data-aos="fade-up">Experience</h2>
+        <ul class="experience-list" data-aos="fade-up">
             <li class="experience-item" v-for="(job, index) of experienceData" :key="index">
                 <h3>{{ job.company }}</h3>
                 <h3>{{ job.position }}</h3>

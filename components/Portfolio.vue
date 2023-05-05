@@ -1,11 +1,11 @@
 <template>
     <section id="portfolio" class="px py">
-        <div class="section-header-top">
+        <div class="section-header-top" data-aos="fade-up">
             <h2>Featured</h2>
             <div class="header-bar"></div>
         </div>
-        <h2 class="text-highlight">Projects</h2>
-        <div class="projects-list">
+        <h2 class="text-highlight" data-aos="fade-up">Projects</h2>
+        <div class="projects-list" data-aos="fade-up">
             <ProjectCard v-for="(project, index) of projects" :key="index" :project="project"></ProjectCard>
         </div>
     </section>

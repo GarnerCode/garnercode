@@ -1,7 +1,7 @@
 <template>
     <section id="reviews" class="px py">
-        <h2 class="text-highlight">Testimonials</h2>
-        <ul class="reviews-list">
+        <h2 class="text-highlight" data-aos="fade-up">Testimonials</h2>
+        <ul class="reviews-list" data-aos="fade-up">
             <li class="review" v-for="(review, index) of reviewsData" :key="index">
                 <p class="review-quote">"{{ review.quote }}"</p>
                 <div class="credit-container">
