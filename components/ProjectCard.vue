@@ -38,7 +38,7 @@
             position: relative;
             border-radius: var(--border-radius);
             box-shadow: var(--image-box-shadow);
-            &:hover, &:active {
+            &:hover {
                 .thumbnail {
                     transform: scale(1.2);
                 }
@@ -87,16 +87,13 @@
             }
         }
     }
-    // @media screen and (min-width: 768px) {
-    //     .project-card {
-    //         max-width: 37.5rem;
-    //         max-height: 37.5rem;
-    //     }
-    // }
-    // @media screen and (min-width: 820px) {
-    //     .project-card {
-    //         max-width: 38rem;
-    //         max-height: 38rem;
-    //     }
-    // }
+    @media (hover: none) {
+        .project-card {
+            .card-overlay {
+                opacity: 1;
+                background-color: rgba(45, 51, 60, 0.75);
+                backdrop-filter: blur(5px);
+            }
+        }
+    }
 </style>
