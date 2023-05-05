@@ -12,7 +12,7 @@ export const projectsData = [
     },
     {
         title: 'Fusion',
-        description: 'Sample e-commerce website offering a variety of paintball gear.',
+        description: 'E-commerce website offering paintball gear.',
         imageUrl: 'assets/images/fusion.webp',
         liveUrl: 'https://reliable-pithivier-dd3e26.netlify.app/',
         gitUrl: 'https://github.com/GarnerCode/fusion-paintball',

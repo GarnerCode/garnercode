@@ -5,11 +5,9 @@
             <div class="header-bar"></div>
         </div>
         <h2 class="text-highlight">Projects</h2>
-        <ul class="projects-list">
-            <li v-for="(project, index) of projects" :key="index">
-                <ProjectCard :project="project"></ProjectCard>
-            </li>
-        </ul>
+        <div class="projects-list">
+            <ProjectCard v-for="(project, index) of projects" :key="index" :project="project"></ProjectCard>
+        </div>
     </section>
 </template>
 
@@ -35,9 +33,9 @@
             .projects-list {
                 list-style: none;
                 padding: 0;
-                display: flex;
-                flex-direction: column;
-                gap: 10rem;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2rem;
                 margin-top: 5rem;
             }
             .header-bar {
@@ -49,6 +47,10 @@
         #portfolio {
             .header-bar {
                 width: 47rem;
+            }
+            .projects-list {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
             }
         }
     }

@@ -183,11 +183,11 @@
     }
     @media screen and (min-width: 768px) {
         header {
-            padding: 2rem 12rem;
-            width: calc(100vw - 24rem);
+            padding: 2rem 10rem;
+            width: calc(100vw - 20rem);
             .mobile-nav {
-                padding: 2rem 12rem;
-                width: calc(100vw - 24rem);
+                padding: 2rem 10rem;
+                width: calc(100vw - 20rem);
             }
         }
     }

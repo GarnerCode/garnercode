@@ -113,8 +113,8 @@
   }
   @media screen and (min-width: 768px) {
     .px {
-        padding-left: 12rem;
-        padding-right: 12rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
     .button {
         width: 30rem;

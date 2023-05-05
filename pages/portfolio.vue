@@ -49,9 +49,9 @@ export default Vue.extend({
             }
             .page-content {
                 margin-top: 5rem;
-                display: flex;
-                flex-direction: column;
-                gap: 10rem;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2rem
             }
         }
     }
@@ -59,6 +59,10 @@ export default Vue.extend({
         #portfolio-page {
             .header-bar {
                 width: 62rem;
+            }
+            .page-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
             }
         }
     }
