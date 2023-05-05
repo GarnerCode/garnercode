@@ -1,5 +1,5 @@
 <template>
-    <div class="project-card" v-if="project">
+    <div onclick="" class="project-card" v-if="project">
         <img class="thumbnail" :src="project.imageUrl" :alt="project.title + ' thumbnail'">
         <div class="card-overlay">
             <div class="card-summary">
