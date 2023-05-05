@@ -38,7 +38,7 @@
             position: relative;
             border-radius: var(--border-radius);
             box-shadow: var(--image-box-shadow);
-            &:hover {
+            &:hover, &:active {
                 .thumbnail {
                     transform: scale(1.2);
                 }
