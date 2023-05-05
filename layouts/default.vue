@@ -20,9 +20,9 @@
     --font-family-primary: 'Roboto', sans-serif;
     --font-family-secondary: 'Roboto Condensed', sans-serif;
 
-    --image-box-shadow: -10px -10px 0px var(--color-primary), 10px 10px 0px var(--color-black);
+    --image-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-    --border-radius: 1px;
+    --border-radius: 3px;
   }
   @media screen and (min-width: 0px) {
     * {
@@ -74,6 +74,7 @@
         border: none;
         font-size: 16px;
         font-family: var(--font-family-secondary);
+        font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 2px;
         display: block;
@@ -91,8 +92,8 @@
         color: var(--color-primary) !important;
     }
     .py {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding-top: 15rem;
+        padding-bottom: 15rem;
     }
     .px {
         padding-left: 4rem;

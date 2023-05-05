@@ -1,5 +1,5 @@
 <template>
-    <header :class="{'scrolled': scrolled}">
+    <header :class="{'scrolled': scrolled}" id="header">
         <div @click="$router.push('/')" class="logo-container">
             <img src="@/static/assets/images/garnercode-logo-full.svg" alt="Logo">
         </div>
@@ -51,6 +51,7 @@
                 navData,
                 navToggled: false,
                 scrolled: false,
+                prevScrollPos: 0,
             }
         },
         mounted() {
@@ -63,6 +64,16 @@
                 } else {
                     this.scrolled = false;
                 }
+                let currentScrollPos = window.scrollY;
+                const headerEl = document.getElementById("header")
+                if (headerEl && !this.navToggled) {
+                    if (this.prevScrollPos > currentScrollPos) {
+                        headerEl.style.top = "0"!;
+                    } else {
+                        headerEl.style.top = "-200px"!;
+                    }
+                }
+                this.prevScrollPos = currentScrollPos;
             },
         },
     })
@@ -81,7 +92,7 @@
             z-index: 100;
             width: calc(100vw - 8rem);
             background-color: var(--color-black);
-            transition: box-shadow 0.3s ease;
+            transition: all 0.3s ease;
             height: 7rem;
             &.scrolled {
                 box-shadow: 0px 5px 15px -5px rgba(34, 39, 46, 0.5);
@@ -146,7 +157,7 @@
                     &.active {
                         a {
                             color: var(--color-primary);
-                            border-bottom: 3px solid var(--color-primary);
+                            border-bottom: 2px solid var(--color-primary);
                         }
                     }
                 }
@@ -155,6 +166,7 @@
                     color:var(--color-white);
                     font-family: var(--font-family-secondary);
                     font-size: 4.5rem;
+                    text-transform: uppercase;
                 }
             }
             .desktop-nav {
@@ -207,11 +219,12 @@
                     .nav-link {
                         text-decoration: none;
                         color: var(--color-white);
-                        font-size: 2rem;
+                        font-size: 1.6rem;
                         font-family: var(--font-family-secondary);
+                        text-transform: uppercase;
                     }
                     &.active {
-                        border-bottom: 3px solid var(--color-primary);
+                        border-bottom: 2px solid var(--color-primary);
                         a {
                             color: var(--color-primary);
                         }

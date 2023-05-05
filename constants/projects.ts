@@ -1,5 +1,16 @@
 export const projectsData = [
     {
+        title: 'DungeoNex',
+        description: 'Dungeons & Dragons campaign management tool.',
+        imageUrl: 'assets/images/dungeonex.webp',
+        liveUrl: 'https://dungeonex.vercel.app/',
+        gitUrl: 'https://github.com/GarnerCode/dungeonex',
+        tech: [
+            'Vue',
+            'Supabase',
+        ],
+    },
+    {
         title: 'Fusion',
         description: 'Sample e-commerce website offering a variety of paintball gear.',
         imageUrl: 'assets/images/fusion.webp',
@@ -17,17 +28,6 @@ export const projectsData = [
         gitUrl: 'https://github.com/GarnerCode/pokevue',
         tech: [
             'Vue',
-        ],
-    },
-    {
-        title: 'DungeoNex (Under Development)',
-        description: 'Dungeons & Dragons campaign management tool allowing users to create and manage campaigns, characters, and encounters.',
-        imageUrl: 'assets/images/dungeonex.webp',
-        liveUrl: 'https://dungeonex.vercel.app/',
-        gitUrl: 'https://github.com/GarnerCode/dungeonex',
-        tech: [
-            'Vue',
-            'Supabase',
         ],
     },
 ]

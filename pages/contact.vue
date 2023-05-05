@@ -51,7 +51,7 @@ export default Vue.extend({
                 background-color: var(--color-black);
                 border-radius: var(--border-radius);
                 padding: 2rem;
-                box-shadow: -10px -10px 0px var(--color-primary);
+                box-shadow: var(--image-box-shadow);
                 width: calc(100% - 8rem);
                 margin: 0 auto;
             }
