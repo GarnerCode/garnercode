@@ -11,13 +11,13 @@ export const projectsData = [
         ],
     },
     {
-        title: 'Fusion',
-        description: 'E-commerce website offering paintball gear.',
-        imageUrl: 'assets/images/fusion.webp',
-        liveUrl: 'https://reliable-pithivier-dd3e26.netlify.app/',
-        gitUrl: 'https://github.com/GarnerCode/fusion-paintball',
+        title: 'Audiophile',
+        description: 'E-commerce website offering audio electronics.',
+        imageUrl: 'assets/images/audiophile.webp',
+        liveUrl: 'https://audiophile-nine-omega.vercel.app/',
+        gitUrl: 'https://github.com/GarnerCode/audiophile',
         tech: [
-            'Vue',
+            'Nuxt',
         ],
     },
     {
