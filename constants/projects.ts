@@ -21,13 +21,13 @@ export const projectsData = [
         ],
     },
     {
-        title: 'PokeVue',
-        description: 'Index providing information on Generation 1 Pokemon',
-        imageUrl: 'assets/images/pokevue.webp',
-        liveUrl: 'https://chic-paletas-8ebf90.netlify.app/',
-        gitUrl: 'https://github.com/GarnerCode/pokevue',
+        title: 'Arch',
+        description: 'Website for an architechure firm.',
+        imageUrl: 'assets/images/arch.webp',
+        liveUrl: 'https://arch-olive.vercel.app/',
+        gitUrl: 'https://github.com/GarnerCode/arch',
         tech: [
-            'Vue',
+            'Nuxt',
         ],
     },
 ]
