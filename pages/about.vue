@@ -62,6 +62,7 @@
                 }
                 p {
                     text-align: justify;
+                    line-height: 30px;
                 }
             }
         }

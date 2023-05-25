@@ -64,16 +64,16 @@
                 } else {
                     this.scrolled = false;
                 }
-                let currentScrollPos = window.scrollY;
-                const headerEl = document.getElementById("header")
-                if (headerEl && !this.navToggled) {
-                    if (this.prevScrollPos > currentScrollPos) {
-                        headerEl.style.top = "0"!;
-                    } else {
-                        headerEl.style.top = "-200px"!;
-                    }
-                }
-                this.prevScrollPos = currentScrollPos;
+                // let currentScrollPos = window.scrollY;
+                // const headerEl = document.getElementById("header")
+                // if (headerEl && !this.navToggled) {
+                //     if (this.prevScrollPos > currentScrollPos) {
+                //         headerEl.style.top = "0"!;
+                //     } else {
+                //         headerEl.style.top = "-200px"!;
+                //     }
+                // }
+                // this.prevScrollPos = currentScrollPos;
             },
         },
     })
@@ -86,21 +86,21 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 2rem 4rem;
+            padding: 0 4rem;
             position: fixed;
             top: 0;
             z-index: 100;
             width: calc(100vw - 8rem);
             background-color: var(--color-black);
             transition: all 0.3s ease;
-            height: 7rem;
+            height: 70px;
             opacity: 0;
             animation: fadeIn 0.3s 0.25s ease forwards;
             &.scrolled {
                 box-shadow: 0px 5px 15px -5px rgba(34, 39, 46, 0.5);
             }
             .logo-container {
-                font-size: 4.5rem;
+                font-size: 3rem;
                 font-family: var(--font-family-secondary);
                 color: var(--color-white);
                 display: flex;
@@ -108,7 +108,7 @@
                 align-items: flex-start;
                 cursor: pointer;
                 img {
-                    width: 25rem;
+                    width: 20rem;
                 }
                 span {
                     font-family: var(--font-family-secondary);
@@ -141,7 +141,7 @@
             .mobile-nav {
                 background-color: var(--color-black);
                 position: fixed;
-                top: 11rem;
+                top: 70px;
                 left: 0;
                 padding: 2rem 4rem;
                 padding-top: 0;
@@ -156,10 +156,12 @@
                     gap: 5rem;
                 }
                 .nav-item {
+                    a {
+                        letter-spacing: 2px;
+                    }
                     &.active {
                         a {
                             color: var(--color-primary);
-                            border-bottom: 2px solid var(--color-primary);
                         }
                     }
                 }
@@ -168,7 +170,6 @@
                     color:var(--color-white);
                     font-family: var(--font-family-secondary);
                     font-size: 4.5rem;
-                    text-transform: uppercase;
                 }
             }
             .desktop-nav {
@@ -185,7 +186,7 @@
     }
     @media screen and (min-width: 768px) {
         header {
-            padding: 2rem 10rem;
+            padding: 0 10rem;
             width: calc(100vw - 20rem);
             .mobile-nav {
                 padding: 2rem 10rem;
@@ -195,13 +196,12 @@
     }
     @media screen and (min-width: 1180px) {
         header {
-            padding: 2rem 25rem;
+            padding: 0 25rem;
             width: calc(100vw - 50rem);
-            height: 4rem;
             .logo-container {
-                font-size: 3rem;
+                font-size: 2rem;
                 img {
-                    width: 20rem;
+                    width: 15rem;
                 }
             }
             .mobile-nav-button {
@@ -223,10 +223,15 @@
                         color: var(--color-white);
                         font-size: 1.6rem;
                         font-family: var(--font-family-secondary);
-                        text-transform: uppercase;
+                        transition: all 0.3s ease;
+                        letter-spacing: 2px;
                     }
                     &.active {
-                        border-bottom: 2px solid var(--color-primary);
+                        a {
+                            color: var(--color-primary);
+                        }
+                    }
+                    &:hover {
                         a {
                             color: var(--color-primary);
                         }
@@ -237,14 +242,13 @@
     }
     @media screen and (min-width: 1400px) {
         header {
-            padding: 2rem 35rem;
+            padding: 0 35rem;
             width: calc(100vw - 70rem);
-            height: 3rem;
         }
     }
     @media screen and (min-width: 1800px) {
         header {
-            padding: 2rem 40rem;
+            padding: 0 40rem;
             width: calc(100vw - 80rem);
         }
     }

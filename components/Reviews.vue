@@ -48,6 +48,7 @@
                 font-style: italic;
                 text-align: justify;
                 margin-top: 5rem;
+                line-height: 30px;
             }
             .credit-container {
                 display: flex;

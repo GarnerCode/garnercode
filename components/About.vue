@@ -51,6 +51,7 @@
             p {
                 text-align: justify;
                 color: var(--color-black);
+                line-height: 30px;
             }
         }
     }

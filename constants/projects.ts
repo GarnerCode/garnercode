@@ -28,6 +28,18 @@ export const projectsData = [
         gitUrl: 'https://github.com/GarnerCode/arch',
         tech: [
             'Nuxt',
+            'Leaflet JS',
+        ],
+    },
+    {
+        title: 'Callisburg',
+        description: 'Website for the Callisburg Church of Christ.',
+        imageUrl: 'assets/images/callisburg.webp',
+        liveUrl: 'https://callisburgcoc.vercel.app/',
+        gitUrl: 'https://github.com/GarnerCode/callisburgcoc',
+        tech: [
+            'Nuxt',
+            'Supabase',
         ],
     },
 ]

@@ -29,6 +29,9 @@
             .landing-content {
                 transform: translateX(-100rem);
                 animation: slideInFromLeft 0.5s 0.5s ease forwards;
+                p {
+                    line-height: 30px;
+                }
                 a {
                     opacity: 0;
                     animation: fadeIn 0.5s 1.25s ease forwards;
